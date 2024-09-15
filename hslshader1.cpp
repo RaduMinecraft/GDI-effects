@@ -78,9 +78,6 @@ DWORD WINAPI shader4(LPVOID lpParam) {
             for (int y2 = 0; y2 < y; y2++) {
                 int j = c * 4;
 
-                //int wave = (int)(j + (j * sin(sqrt((x2 * x2) + (y2 * y2)) / 64)));
-                //int wave = (int)(j + (j * sin(((x2 * x2) + (y2 * y2)) / 64)));
-                //int wave = (int)(j + (j * sin(((x2 * x2) - (y2 * y2)) / 64)));
                 int wave = (int)(j + (j * cbrt(((x2 * x2) - (y2 * y2)) / 64)));
 
                 data[y2 * x + x2].rgb = COLORHSL((x * y) + wave);
