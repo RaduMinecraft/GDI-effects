@@ -1,5 +1,3 @@
-//Decompiled and optimised by RaduMinecraft
-
 #include <windows.h>
 #include <ctime>
 
